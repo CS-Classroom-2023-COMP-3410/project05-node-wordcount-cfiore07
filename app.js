@@ -79,13 +79,9 @@ function printColoredLines(content, wordCount) {
  * Main function to read the file, count the word occurrences and print the colored lines.
  */
 function processFile() {
-    // const content = readFileContent();
-    // const wordCount = getWordCounts(content);
-    const cont = `Hello World! 
-    Hello World! 
-    Bye World!`
-    const wordCounts = getWordCounts(cont);
-    printColoredLines(cont, wordCounts);
+    const content = readFileContent();
+    const wordCount = getWordCounts(content);
+    printColoredLines(content, wordCounts);
 }
 
 if (require.main === module) {
